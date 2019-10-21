@@ -98,7 +98,7 @@ body {
 }
 
 #cursor {
-    float: left;
+    display: inline-block;
     width: 24px;
     overflow: hidden;
     -webkit-animation: 1.5s blink step-end infinite;
