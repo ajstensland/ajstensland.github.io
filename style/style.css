@@ -1,0 +1,183 @@
+body {
+    margin: 0px;
+}
+
+#outer {
+    /* Background */
+    background-color: #111111;
+    background-image: url(/img/fall.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Positioning */
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    /* Outer border vignette */
+    box-shadow: inset 0 0 50px 20px #080808;
+
+}
+
+#middle {
+    /* Center main box */
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#inner {
+    /* Positioning */
+    display: inline-block; 
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Color, border, and drop shadow */
+    background-color: #181818;
+    border: 3px solid #AAAAAA;
+    border-radius: 5px;
+    box-shadow: 0px 0px 50px #000000;
+
+    /* Inner item arrangement */
+    text-align: center;
+    padding: 30px;
+
+    /* Fade-in */
+    /*
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+    animation: fadein 2s;
+    */
+}
+
+/*
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+*/
+
+#prompt {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 36px;
+    color: #DDDDDD;
+    margin-bottom: 10px;
+    padding:  0px;
+    display: inline-block;
+}
+
+#clear {
+    clear: left;
+}
+
+#name {
+    width: 288px;
+    float: left;
+}
+
+#cursor {
+    float: left;
+    width: 24px;
+    overflow: hidden;
+    -webkit-animation: 1.5s blink step-end infinite;
+    -moz-animation: 1.5s blink step-end infinite;
+    -o-animation: 1.5s blink step-end infinite;
+    animation: 1.5s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #DDDDDD;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #DDDDDD;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #DDDDDD;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #DDDDDD;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #DDDDDD;
+  }
+}
+
+.link {
+    font-family: "Raleway", sans-serif;
+    border: 2px solid #AAAAAA;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 5px;
+    display: inline-block;
+    color: #DDDDDD;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #AAAAAA;
+    border: 2px solid #AAAAAA;
+}
+
+#github {
+    font-size: 32px;
+}
+
+
+#linkedin {
+    font-size: 32px;
+}
+
+
+#aboutme {
+    font-size: 32px;
+}
