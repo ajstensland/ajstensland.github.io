@@ -81,22 +81,18 @@ body {
 
 #prompt {
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 5vw;
+    font-size: 9vw;
     color: #DDDDDD;
     margin-bottom: 10px;
     padding:  0px;
     display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 550px){
     #prompt{
         font-size: 36px;
-    }
-}
-
-@media screen and (max-width: 1100px){
-    #prompt{
-
     }
 }
 
